@@ -27,7 +27,7 @@ The goal: **readable, consistent code** that feels the same no matter who wrote 
   ```cpp
   int calculate_power(int base, int exponent);
   namespace robot_utils { ... }
-````
+  ```
 
 * **Constants, enum values, macros** → `SCREAMING_SNAKE_CASE`
 
@@ -65,7 +65,7 @@ public:
   void do_something();
 
 private:
-  int value_;
+  int value;
 };
 ```
 
@@ -75,6 +75,7 @@ private:
 
 * Keep lines ≤ 100 chars where possible.
 * Prefer modern C++ (smart pointers, `auto`, range-for) but avoid being “clever” at the cost of readability.
+* Use `this` rather than implicit member access. (`this->do_stuff()` instead of just `do_stuff()`)
 * Document *why*, not *what*. The code should explain *what*.
 
 ---
